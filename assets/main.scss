@@ -1,0 +1,446 @@
+//  STYLES
+
+
+//  Vars
+
+// Colors
+$text: #4A4A4A;
+$text-light: hsla(0, 0%, 61%, 1);
+$light: hsla(0, 0%, 98%, 1);
+$red: #E84545;
+$orange: hsla(28, 100%, 55%, 1);
+
+// Font Stacks
+$OpenSans: 'Open Sans', Helvetica, sans-serif;
+
+// Gradients
+$button-gradient: linear-gradient(-180deg, hsla(28, 100%, 58%, 1) 0%, hsla(28, 98%, 47%, 1) 100%);
+$button-gradient-hover: linear-gradient(-180deg, hsla(28, 100%, 62%, 1) 0%, hsla(28, 98%, 51%, 1) 100%);
+
+// Media Queries
+$tablet: "only screen and (max-width : 56rem)";
+$xl-phone: "only screen and (max-width : 40rem)";
+$phone: "only screen and (max-width : 24rem)";
+
+
+//Shadows
+$Shadow1: 0px 6px 6px 0px rgba(0,0,0,0.16), 0px 8px 12px 0px rgba(0,0,0,0.16);
+$Shadow1-Hover: 0px 10px 6px 0px rgba(0,0,0,0.16), 0px 12px 12px 0px rgba(0,0,0,0.16);
+
+* {
+    box-sizing: border-box
+}
+
+
+// Import
+@import 'reset';
+@import 'typography';
+@import 'animation';
+
+
+//  Modules
+.container {
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1rem;
+    
+    &--flex {
+        max-width: 80rem;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+}
+
+
+.col-1 {
+    flex: 0 0 8.333%;
+    padding: 0 1rem;
+}
+
+.col-2 {
+    flex: 0 0 16.667%;
+    padding: 0 1rem;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    padding: 0 1rem;
+}
+
+.col-4 {
+    flex: 0 0 33.333%;
+    padding: 0 1rem;
+}
+
+.col-5 {
+    flex: 0 0 41.667%;
+    padding: 0 1rem;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    padding: 0 1rem;
+}
+
+.offset-1 {
+    margin-left: 8.333%;
+}
+
+.offset-2 {
+    margin-left: 16.667%;
+}
+
+.offset-3 {
+    margin-left: 25%;
+}
+
+section {
+    margin: 8rem auto;
+}
+
+.button {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-image: $button-gradient;
+    box-shadow: $Shadow1;
+    transition: all .3s ease-in-out;
+    letter-spacing: .05em;
+    
+    &:hover {
+        background-image: $button-gradient-hover;
+        box-shadow: $Shadow1-Hover;
+    }
+    
+    &--big {
+        font-size: 2rem;
+        
+        @media #{$tablet} {font-size: 1.5rem}
+    }
+    
+    
+}
+
+.underline {
+    &:after {
+            content: "";
+            display: block;
+            background: $red;
+            color: $red;
+            margin: 1rem 0 0;
+            padding: 0.25rem 0;
+        }
+}
+
+//    Layout
+
+
+header {
+    margin: 0;
+    background-image: linear-gradient(-133deg, #F2FFF4 0%, #EFF0FC 100%);
+    padding: 3rem 0 8rem;
+    
+    nav {
+        @extend .container;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        .button {
+            animation: intro-bounce 0.75s ease-in-out 0s 2;
+        }
+        
+        #logo {
+            display: block;
+            img {
+                max-height: 3rem;
+                width: auto;
+            }
+        }
+    }
+}
+
+
+.intro {
+    &__title {
+        @extend .col-5;
+        @extend .underline;
+    }
+    
+    &__description {
+        @extend .col-6;
+        @extend .offset-1;
+    }
+}
+
+.perfect-for {
+    &--title {
+        flex: 100%;
+        padding: 0 1rem;
+    }
+    
+    .example {
+        @extend .col-3;
+        margin: 4rem 0 0;
+        &--icon {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        &--title {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        
+        &--description {text-align: center}
+        
+    }
+}
+
+.kirby-lets-you {
+    &__title {
+        @extend .col-3;
+        @extend .underline;
+        
+    }
+    &__list {
+        @extend .col-6;
+        @extend .offset-3;
+        li {@extend .large; margin: 0 0 1em;}
+    }
+}
+
+.optin {
+    background: $light;
+    padding: 4rem 0;
+    transition: all .3s ease-in-out;
+    
+    .container--flex {
+        .sign-up {
+            @extend .col-6;
+            @extend .offset-1;
+            
+            &__title {margin: 0 0 1rem}
+            
+            &__description {margin: 1rem 0 2rem;}
+            
+            &__cta-container {
+                margin: 1rem 0;
+                box-shadow: $Shadow1;
+            }
+            
+            &__disclaimer {text-align: center}
+        }
+        
+        .lessons {
+            @extend .col-3;
+            @extend .offset-1;
+            
+            .lesson {
+                margin: 0 0 2rem;
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: row nowrap;
+                
+                &__icon {
+                    margin: 0 1rem 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+#CTA {
+    @extend .button;
+    @extend .button--big;
+    box-shadow: none;
+    cursor: pointer;
+    
+    &:hover {
+        background: $button-gradient-hover;
+    }
+}
+
+.form {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1rem;
+    
+    &__label {
+        flex: 100%;
+        font-size: .75rem;
+        font-family: $OpenSans;
+        margin: 0 0 0.5rem;
+    }
+    
+    &__email, &__submit {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    &__email {
+        border: .125rem solid $orange;
+        flex: 1;
+        
+        &:focus {
+            outline: .25rem solid $orange;
+        }
+        
+    }
+    
+    &__submit {
+        background: $button-gradient;
+        color: white;
+        cursor: pointer;
+        border: none;
+        margin-left: 1rem;
+        padding: .5rem 1rem;
+        
+        &:hover{
+            background: $button-gradient-hover;
+        }
+    }
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+footer ul {
+    @extend .container--flex;
+    justify-content: center;
+    padding: 0 0 4rem;
+    
+    .list-item {
+        color: $text-light;
+        display: inline-block;
+        margin: 0 2rem;
+        text-align: center;
+        
+        &__link {
+            color: $text-light;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+@media #{$tablet} {
+    section {margin: 6rem auto}
+    .intro {
+        &__title {
+            flex: 0 0 33.333%;
+        }
+        &__description {
+            flex: 0 0 66.667%;
+            margin-left: 0;
+        }
+    }
+    .perfect-for .example {
+        flex: 0 0 50%;
+    }
+    
+    .kirby-lets-you {
+        &__title {
+            flex: 0 0 33.333%;
+        }
+        &__list {
+            flex: 0 0 58.333%;
+            margin-left: 8.333%;
+        }
+    }
+    
+    .optin .container--flex {
+        .sign-up {
+            flex: 0 0 66.667%;
+            margin-left: 0;
+        }
+        .lessons {
+            flex: 0 0 33.333%;
+            margin-left: 0;
+        }
+    }
+    
+    .form {
+        &__email {
+            flex: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        &__submit {
+            flex: 100%;
+            margin-left: 0;
+            padding: 1rem;
+        }
+    }
+}
+
+@media #{$xl-phone} {
+    section {margin: 6rem auto}
+    .intro {
+        &__title {
+            flex: 100%;
+            margin: 0 0 1rem;
+        }
+        
+        &__description {
+            flex: 0 0 100%;
+            margin-left: 0;
+        }
+    }
+    
+    .perfect-for {
+        &--title {text-align: center}
+        .example {
+            flex: 100%;
+            margin: 4rem 0 0;
+        }
+    }
+    
+    .kirby-lets-you {
+        &__title {
+            flex: 100%;
+            margin: 0 0 2rem;
+        }
+        &__list {
+            flex: 100%;
+            margin-left: 0;
+        }
+    }
+    
+    .optin .container--flex {
+        .sign-up {
+            flex: 100%;
+        }
+        
+        .lessons {
+            flex: 100%;
+            order: -1;
+            margin: 0 0 2rem;
+        }
+    }
+    
+    footer ul {
+        .list-item {
+            flex: 100%;
+            padding: 0 0 1.5rem;
+        }
+    }
+    
+}
