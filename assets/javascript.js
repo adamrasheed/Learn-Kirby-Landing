@@ -9,7 +9,7 @@ $( document ).ready(function() {
             $("#CTA").css('cursor', 'default').css('background','hsla(28, 100%, 50%, 1)');
             
             // darken background color
-            $('#optin-bg').css('background', 'hsla(0, 0%, 65%, 1)');
+            $('#optin-bg').css('background', 'hsla(0, 0%, 21%, 1)').addClass('all-white');
         }
         $(".form__email").focus();
 	 });

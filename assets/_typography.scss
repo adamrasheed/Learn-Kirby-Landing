@@ -5,6 +5,10 @@ body {
     font-family: 'Crimson Text', serif;
     font-size: 16px;
     line-height: 1.4;
+    
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 .large {
@@ -36,7 +40,10 @@ h3 {font-size: 1.999em;}
 h4 {font-size: 1.414em;}
 
 a {
+    color: $text;
     text-decoration: none;
+    
+    &:hover {text-decoration: underline;}
 }
 
 .hero {
@@ -52,6 +59,10 @@ a {
     letter-spacing: 0.5px;
     line-height: 2.5rem;
     text-align: center;
+}
+
+.responses {
+    font-family: $OpenSans
 }
 
 
