@@ -306,9 +306,25 @@
 		},
 	"\/assets\/images\/masthead-bg.jpg": {
 		"ft": 16384,
-		"iS": 542442,
+		"iS": 597962,
 		"oA": 0,
 		"oAP": "\/assets\/images\/masthead-bg.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/images\/masthead-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 597962,
+		"oA": 0,
+		"oAP": "\/assets\/images\/masthead-bg@2x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/images\/masthead-bg@3x.jpg": {
+		"ft": 16384,
+		"iS": 542442,
+		"oA": 0,
+		"oAP": "\/assets\/images\/masthead-bg@3x.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -428,7 +444,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/main-min.css",
 		"oF": 0,
 		"oS": 0
@@ -441,7 +457,7 @@
 		},
 	"\/assets\/main.scss": {
 		"aP": 1,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -449,14 +465,23 @@
 		"oA": 0,
 		"oAP": "\/assets\/main.css",
 		"oF": 2,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/assets\/min\/javascript-min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/min\/min\/javascript-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/retina.min.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/assets\/min\/retina.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -469,7 +494,7 @@
 		},
 	"\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
 		},

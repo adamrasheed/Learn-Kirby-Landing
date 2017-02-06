@@ -59,9 +59,10 @@ $Shadow1-Hover: 0px 10px 6px 0px rgba(0,0,0,0.16), 0px 12px 12px 0px rgba(0,0,0,
 //    Components
 .section {
     margin: 0 auto 4rem;
+    padding: 2rem 0 0;
     &--alt {
-        background: $light;
         padding: 2rem 0;
+        background: $light;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.10);
     }
     &__subheading {
@@ -70,6 +71,7 @@ $Shadow1-Hover: 0px 10px 6px 0px rgba(0,0,0,0.16), 0px 12px 12px 0px rgba(0,0,0,
     
     @media #{$med} {
         margin: 0 auto 6rem;
+        padding: 3rem 0 0;
         &--alt {
             padding: 3rem 0;
         }
@@ -80,6 +82,7 @@ $Shadow1-Hover: 0px 10px 6px 0px rgba(0,0,0,0.16), 0px 12px 12px 0px rgba(0,0,0,
     
     @media #{$lrg} {
         margin: 0 auto 8rem;
+        padding: 4rem 0 0;
         &--alt {
             padding: 4rem 0;
         }
@@ -277,6 +280,11 @@ header {
             &__cta-container {
                 margin: 1rem ;
                 box-shadow: $Shadow1;
+                
+                @media #{$lrg} {
+                    max-width: 60%;
+                    margin: 1rem auto;
+                }
             }
             
             &__disclaimer {text-align: center; color: hsla(0, 0%, 0%, 0.4) !important}
@@ -377,6 +385,20 @@ header {
     @media #{$med} {
         align-content: stretch;
         padding: 1rem 25%;
+        &__email{
+        }
+        
+        &__submit {
+            flex: 0  1 auto;
+            width: auto;
+            padding: .5rem 1rem;
+            margin-left: 1rem;
+        }
+    }
+    
+    @media #{$lrg} {
+        align-content: stretch;
+        padding: 2rem;
         &__email{
         }
         
