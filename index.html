@@ -5,8 +5,16 @@
     <title>Learn Kirby | Learn Kirby CMS the Easy Way</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <!--Text-->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i|Open+Sans:400,700,800" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/images/favicon/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#db4848">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat:400,700" rel="stylesheet">
     
     <!--Style-->
     <link rel="stylesheet" href="assets/main.css">
@@ -14,33 +22,43 @@
 <body>
    
     <header>
-        <nav>
-            <a href="" id="logo">
+        <nav class="nav">
+            <a href="" id="logo" class="nav__logo">
                 <img src="assets/Learn-Kirby-Logo.svg" alt="">
             </a>
-            
-            <a href="#optin-bg" class="nav__button button">Get Your Free Crash Course</a>
+            <a href="#optin-bg" class="nav__button button scroll-button">Get Your Free Crash Course</a>
         </nav>
         
-        <h1 class="hero">Learn Kirby.</h1>
-        <h2 class="subtitle">A Course Designed to Help You<br>Quickly Learn the Easy-to-Use Kirby CMS</h2>
-   </header>
+    </header>
+    
+    <div class="hero">
+        <div class="hero__content">
+            <h1 class="sml center hero__heading">Learn Kriby Simply.</h1>
+            <h2 class="sml center hero__subheading">
+                A Free 5-Part Course Designed to Help You Quickly Learn the Kirby CMS
+           </h2>
+           <a href="#optin-bg" class="hero__cta button scroll-button">Get The Free Crash Course</a>
+        </div>
+        <img src="/assets/images/masthead-bg.jpg" alt="" class="hero__image">
+    </div>
    
-    <main>
-    <section class="container--flex intro">
-           <h3 class="intro__title">Wordpress is Too Bloated for Small Websites</h3>
-           <p class="large intro__description">
-               Don’t mess with Databases, huge php files, and etc. <br> <br>
-                Kirby is a flat-file CMS that lets you keep your entire project in a folder. <br> <br>
-                Kirby lets you easily create website with a complete back–end that’s as feature-rich as you want. Learn it the easy way with a <a href="#optin-bg">Free 5-Part Crash Course</a>.
-           </p>
-       </section>
+    
+    <section class="section">
+           <div class="container--flex intro">
+               <h3 class="sml med--col-4 lrg--col-5 lrg--offset-1 title intro__title">Wordpress is Too <span>Bloated</span> for Small Websites</h3>
+               <p class="sml med--col-4 lrg--col-6 large intro__description">
+                   Don’t mess with Databases, huge php files, and etc. <br> <br>
+                    Kirby is a flat-file CMS that lets you keep your entire project in a folder. <br> <br>
+                    Kirby lets you easily create website with a complete back–end that’s as feature-rich as you want. Learn it the easy way with a <a href="#optin-bg">Free 5-Part Crash Course</a>.
+               </p>
+           </div>
+    </section>
        
-    <section class="container--flex perfect-for">
+    <section class="section section--alt">
+        <div class="container--flex perfect-for">
+            <h2 class="title perfect-for--title">Kirby is Perfect For:</h2>
         
-        <h2 class="perfect-for--title class=""">Kirby is Perfect For:</h2>
-        
-        <div class="example">
+            <div class="sml med--col-2 lrg--col-3 example">
                <img src="assets/icon-designers.svg" alt="" class="example--icon">
                <h3 class="example--title">Designers</h3>
                <p class="example--description">
@@ -48,7 +66,7 @@
                </p>
            </div>
            
-        <div class="example">
+            <div class="sml med--col-2 lrg--col-3 example">
                <img src="assets/icon-developers.svg" alt="" class="example--icon">
                <h3 class="example--title">Developers</h3>
                <p class="example--description">
@@ -56,7 +74,7 @@
                </p>
            </div>
            
-        <div class="example">
+            <div class="sml med--col-2 lrg--col-3 example">
                <img src="assets/icon-clients.svg" alt="" class="example--icon">
                <h3 class="example--title">Clients</h3>
                <p class="example--description">
@@ -64,71 +82,82 @@
                </p>
            </div>
            
-        <div class="example">
+            <div class="sml med--col-2 lrg--col-3 example">
                <img src="assets/icon-teams.svg" alt="" class="example--icon">
                <h3 class="example--title">Teams</h3>
                <p class="example--description">
                    Kirby’s incredibly scalable architecture let’s you create anyhting from simple 3-page sites for mom-and-pop businesses to a dozen-page website with blogs, portfolio pieces, and many more types of data.
                </p>
            </div>
-           
-    </section><!-- End .perfect-for-->
-    
-    <section class="container--flex kirby-lets-you">
-        <h3 class="kirby-lets-you__title">Kirby Let’s You&nbsp;… </h3>
-        
-        <ul class="kirby-lets-you__list">
-            <li>Create Custom Fields without downloading a single plugin.</li>
-            <li>Use Git effortlessly.</li>
-            <li>Write blog articles in Markdown</li>
-            <li>Create “Client–Proof” admin panels.</li>
-            <li>Manage your entire project without having to touch a database.</li>
-        </ul>
+        </div><!-- End .perfect-for-->
     </section>
     
-    <section id="optin-bg" class="optin">
-        <div class="container--flex">
-            <div class="sign-up">
-                <h2 class="sign-up__title">Sign Up Below and get a FREE 5-Part Crash Course and learn Kirby</h2>
-                
-                <p class="large sign-up__description">
-                    Get a 5-part Video Crash-Course devlivered straight to your inbox. With this crash course, you'll be able to use Kirby to create a dynamic website that you can update sright from the broswer.
-                </p>
-                
-                <div href="" class="sign-up__cta-container">
-                
-                <div id="CTA" class="button-like">
-                    Get Your Crash Course
-                </div>
-                
-                <!--MAILCHIMP FORM-->
-                <form action="//adamrasheed.us5.list-manage.com/subscribe/post?u=e56ce19cee870ac0f19d3dbfa&amp;id=736beb0c0f" method="post" id="mc-embedded-subscribe-form" class="form hidden validate" target="_blank" novalidate>
-                    <label class="form__label" for="mce-EMAIL">Email Address</label>
-                    <input class="form__email required email" type="email" name="EMAIL" id="mce-EMAIL" placeholder="johndoe@gmail.com">
-                    
-                    <!-- Bots Beware-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_e56ce19cee870ac0f19d3dbfa_736beb0c0f" tabindex="-1" value="">
-                    </div>
-                    
-                    <input type="submit" value="Send Me My Course" name="subscribe" id="mc-embedded-subscribe" class="form__submit">
-                    
-                    <!--Responses-->
-                    <div class="responses" id="mce-responses">
-                        <div class="responses__response" style="display:none" id="mce-error-response"></div>
-                        <div class="responses__response--success" style="display:none" id="mce-success-response"></div>
-                    </div><!--end .mce-responses-->
-                    
-                </form>
-                
-                <!--MAILCHIMP SCRIPT-->
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                </div><!--end .sign-up__cta-container -->
-                
-                <p class="sign-up__disclaimer small">Click the Big Orange Button!</p>
-            </div>
+    <section class="section kirby-lets-you">
+        <div class="container--flex kirby-lets-you">
+            <h3 class="title sml med--col-4 lrg--col-5 lrg--offset-1 kirby-lets-you__title">Kirby Let’s You&nbsp;… </h3>
+        
+            <ul class="sml med--col-4 lrg--col-6 kirby-lets-you__list">
+                <li>Create Custom Fields without downloading a single plugin.</li>
+                <li>Use Git effortlessly.</li>
+                <li>Write blog articles in Markdown</li>
+                <li>Create “Client–Proof” admin panels.</li>
+                <li>Manage your entire project without having to touch a database.</li>
+            </ul>
+        </div><!-- end kirby lets you -->
+    </section>
+    
+    
+    <!-- end result -->
+    <section class="section section--alt">
+        <div class="container--flex end-result">
+            <h2 class="sml center end-result__heading">What You'll Be Making:</h2>
+            <h4 class="sml center end-result__subheading">Using any Text Editor and a copy of <a href="https://getkirby.com/">Kirby.</a></h4>
             
-            <div class="lessons">
+            <div class="screenshots clearfix">
+                <div class="screenshot screenshot--1">
+                    <div class="screenshot__description">
+                        
+                        <div class="screenshot__description-text">
+                            <h4>The Final Product</h4>
+                            <p>A Portfolio website that you can change the content of right from the browser.</p>
+                        </div>
+                        
+                        <img src="/assets/images/Path%201.svg" alt="" class="screenshot__arrow">
+                    </div><!-- end desc -->
+                    
+                    
+                    <img src="/assets/images/screenshot.png" alt="" class="screenshot__img">
+                </div><!-- end screenshot -->
+                
+                <div class="screenshot screenshot--2">
+                    <div class="screenshot__description">
+                        
+                        <div class="screenshot__description-text">
+                            <h4>The Final Product</h4>
+                            <p>You can easily change the site’s content from here!</p>
+                        </div>
+                        
+                        
+                        <img src="/assets/images/Path%202.svg" alt="" class="screenshot__arrow">
+                    </div><!-- end desc -->
+                    
+                    
+                    <img src="/assets/images/screenshot-panel.png" alt="" class="screenshot__img">
+                </div><!-- end screenshot -->
+                
+            </div><!-- end screenshots -->
+        </div>
+    </section>
+    
+    <!-- course contents -->
+    <section class="section">
+        <div class="container--flex course-contents">
+            <h2 class="sml center course-contents__heading">Free 5-Part Video Course</h2>
+            <h4 class="sml center course-contents__subheading">Sent straight to your inbox.</h4>
+            
+            <img src="/assets/images/video-course-thumbnails.png" alt="" class="sml med--col-4 lrg--col-8 course-contents__img">
+            
+            <div class="sml med--col-4 lrg--col-4 lessons">
                 <h3 class="lessons__title">Course Lessons</h3>
                 <div class="lesson">
                     <img src="assets/icon-check.svg" alt="" class="lesson__icon">
@@ -171,9 +200,55 @@
                 </div>
                 
             </div><!--end .lessons-->
+            
+        </div><!--end course-contents-->
+    </section>
+    
+    <section id="optin-bg" class="section section--alt optin">
+        <div class="container--flex">
+            <div class="sign-up">
+                <h2 class="center sign-up__title">Sign Up Below &amp; Get The FREE Kriby Crash Course!</h2>
+                
+                <p class="large center sign-up__description">
+                    Get a 5-part Video Crash-Course devlivered straight to your inbox. No fuss. No Muss.
+                </p>
+                
+                <div href="" class="sign-up__cta-container">
+                
+                <div id="CTA" class="button-like">
+                    Get Your Crash Course
+                </div>
+                
+                <!--MAILCHIMP FORM-->
+                <form action="//adamrasheed.us5.list-manage.com/subscribe/post?u=e56ce19cee870ac0f19d3dbfa&amp;id=736beb0c0f" method="post" id="mc-embedded-subscribe-form" class="form hidden validate" target="_blank" novalidate>
+                    <label class="form__label" for="mce-EMAIL">Email Address</label>
+                    <input class="form__email required email" type="email" name="EMAIL" id="mce-EMAIL" placeholder="johndoe@gmail.com">
+                    
+                    <!-- Bots Beware-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_e56ce19cee870ac0f19d3dbfa_736beb0c0f" tabindex="-1" value="">
+                    </div>
+                    
+                    <input type="submit" value="Send Me My Course" name="subscribe" id="mc-embedded-subscribe" class="form__submit">
+                    
+                    <!--Responses-->
+                    <div class="responses" id="mce-responses">
+                        <div class="responses__response" style="display:none" id="mce-error-response"></div>
+                        <div class="responses__response--success" style="display:none" id="mce-success-response"></div>
+                    </div><!--end .mce-responses-->
+                    
+                </form>
+                
+                <!--MAILCHIMP SCRIPT-->
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                </div><!--end .sign-up__cta-container -->
+                
+                <p class="sign-up__disclaimer small">Click the Big Orange Button!</p>
+            </div>
+            
+            
         </div>
     </section>
-    </main>
     
     <footer>
         <ul>

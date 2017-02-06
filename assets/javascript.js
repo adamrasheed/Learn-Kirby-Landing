@@ -14,7 +14,7 @@ $( document ).ready(function() {
         $(".form__email").focus();
 	 });
     
-    $(".nav__button").click(function() {
+    $(".scroll-button").click(function() {
     $('html, body').animate({
         scrollTop: $("#optin-bg").offset().top
     }, 750);
