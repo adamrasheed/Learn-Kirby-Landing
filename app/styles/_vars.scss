@@ -1,0 +1,34 @@
+// Colors
+$text: rgba(0,0,0,0.87);
+$text-light: hsla(0, 0%, 61%, 1);
+$light: hsla(0, 0%, 98%, 1);
+
+
+$primary1: #E55151;
+
+// Font Stacks
+@font-face {
+    font-family: 'Cuabno';
+    src: url('../assets/Cubano-Regular.woff') format('woff');
+}
+$font-family-body: 'Work Sans', -apple-system, Helvetica, sans-serif;
+$font-family-heading: 'Cubano', -apple-system, sans-serif;
+
+
+// Gradients
+$gradient-primary:      linear-gradient(-29deg, #E55151 0%, #E58651 100%);
+$gradient-secondary:    linear-gradient(-55deg, #C5F178 0%, #FFFC63 100%);
+
+// Media Queries
+$tablet: "only screen and (min-width : 56rem)";
+$phone: "only screen and (min-width : 24rem)";
+
+$sml: 'only screen and (min-width : 24rem)';
+$med: 'only screen and (min-width : 36rem)';
+$lrg: 'only screen and (min-width : 64rem)';
+$xlrg: 'only screen and (min-width : 80rem)';
+
+
+//Shadows
+$Shadow1: 0px 6px 6px 0px rgba(0,0,0,0.16), 0px 8px 12px 0px rgba(0,0,0,0.16);
+$Shadow1-Hover: 0px 10px 6px 0px rgba(0,0,0,0.16), 0px 12px 12px 0px rgba(0,0,0,0.16);

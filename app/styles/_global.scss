@@ -1,0 +1,39 @@
+.img {max-width: 100%}
+
+//    Components
+.section {
+    margin: 0 auto 4rem;
+    padding: 2rem 0 0;
+    &--alt {
+        padding: 2rem 0;
+        background: $light;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.10);
+    }
+    &__subheading {
+        margin-bottom: 2rem;
+    }
+    
+    @media #{$med} {
+        margin: 0 auto 6rem;
+        padding: 3rem 0 0;
+        &--alt {
+            padding: 3rem 0;
+        }
+        &:last-of-type {
+            margin: 0 auto 2rem;
+        }
+    }
+    
+    @media #{$lrg} {
+        margin: 0 auto 8rem;
+        padding: 4rem 0 0;
+        &--alt {
+            padding: 4rem 0;
+        }
+        &__subheading {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+// Shadows
