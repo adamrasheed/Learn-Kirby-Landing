@@ -126,7 +126,7 @@ gulp.task('build:tmp',
           ['clean', 'html', 'styles', 'scripts', 'assets']);
 
 // Default
-gulp.task('default', [ 'build:tmp', 'browser-sync'], () => {
+gulp.task('default', [ 'clean', 'build:tmp', 'browser-sync'], () => {
   gulp.watch(app.html, ['html']);
   gulp.watch(app.assets, ['assets']);
   gulp.watch(app.styles, ['styles']);

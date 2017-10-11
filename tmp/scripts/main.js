@@ -2,7 +2,7 @@
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-// @import loggit from './modules/test'
+// import testFunc from './modules/test';
 
 var info = {
     github: 'https://github.com/adamrasheed',
@@ -20,7 +20,7 @@ var perfectFor = function perfectFor() {
     }, {
         title: 'Developers',
         icon: 'fal fa-code',
-        desc: 'Kirby is a flat-file developer-friendly CMS. It let’s you make it as complex or as simple as you want it to be. Oh, and since it’s flat-file. There’s no database for hackers to get into.'
+        desc: 'Kirby is a flat-file developer-friendly CMS. It let’s you make it as complex or as simple as you want it to be. Oh, and since it’s flat-file. There are no database for hackers to get into.'
     }, {
         title: 'Clients',
         icon: 'fal fa-users',
@@ -61,8 +61,6 @@ var perfectFor = function perfectFor() {
     }
 };
 
-var coursePreview = function coursePreview() {};
-
 var footerNotes = function footerNotes() {
     var footer = document.getElementById('footer');
     footer.innerHTML = '\n        <p class="center">\n            Site by <a href="' + info.twitter + '" target="_blank" rel="noopener">' + info.name + '</a>.\n            View <a href="' + info.github + '" target="_blank" rel="noopener">Source Code</a>\n        </p>\n    ';
@@ -73,19 +71,29 @@ var preview = function preview() {
 
     var vidData = [{
         title: 'Kirby vs. Wordpress',
+        videoUrl: true,
+        url: '4t2e_0plkaM',
         desc: 'This video will how you the main differences between kirby CMS and Wordpress, and which one to use for your project.'
     }, {
         title: 'Kirby Setup & Installation',
+        // videoUrl: 
+        url: '',
         desc: 'In this video, you will learn how to setup a working installation on your local machine.'
     }, {
-        title: 'Video 3',
-        desc: 'video 3 description'
+        title: 'Cleaning Out Starterkit ',
+        // videoUrl: true,
+        url: '',
+        desc: 'In this video, you will learn how to properly delete the content that comes with Kirby Starterkit and create your own'
     }, {
-        title: 'Video 4',
-        desc: 'video 4 description'
+        title: 'Creating Dynamic Content with Fields',
+        // videoUrl: true,
+        url: '',
+        desc: 'In this video, you will learn how to make your static html code into dynamic php with Kirby\'s custom fields.'
     }, {
-        title: 'Video 5',
-        desc: ' Vide 5 desscription'
+        title: 'More Dynamic Content with Pages',
+        // videoUrl: true,
+        url: '',
+        desc: 'In this video, you will learn how to create pages with custom fields'
     }];
 
     var _iteratorNormalCompletion2 = true;
@@ -103,9 +111,8 @@ var preview = function preview() {
 
             var videoContainer = document.createElement('div');
             videoContainer.classList.add('video-container');
-            videoContainer.innerHTML = '\n            <span class="video__number">&#35;' + (index + 1) + '</span>\n            <img\n                src="https://picsum.photos/600/400"\n                alt="' + video.title + '"\n                class="video__img" />\n            <h3 class="video__title">' + video.title + '</h3>\n            <p class="video__desc">' + video.desc + '</p>\n        ';
+            videoContainer.innerHTML = '\n            <span class="video__number">&#35;' + (index + 1) + '</span>\n            ' + (video.videoUrl == true ? '<iframe\n            width="560" height="315" src="https://www.youtube.com/embed/' + video.url + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' : '<img\n            src="https://picsum.photos/600/400"\n            alt="' + video.title + '"\n            class="video__img" />') + '\n\n            <h3 class="video__title">' + video.title + '</h3>\n            <p class="video__desc">' + video.desc + '</p>\n        ';
             videos.appendChild(videoContainer);
-            console.log(index + 1);
         }
     } catch (err) {
         _didIteratorError2 = true;
@@ -122,6 +129,13 @@ var preview = function preview() {
         }
     }
 };
+
+// Youtube Fun
+// buildApiRequest('GET',
+//                 '/youtube/v3/channels',
+//                 {'id': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
+//                 'part': 'snippet,contentDetails,statistics'});
+
 
 document.addEventListener("DOMContentLoaded", function () {
     perfectFor();

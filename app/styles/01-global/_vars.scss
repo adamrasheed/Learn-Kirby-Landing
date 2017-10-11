@@ -19,8 +19,8 @@ $font-size-small: 14px;
 
 
 // Gradients
-$gradient-primary:      linear-gradient(-29deg, #E55151 0%, #E58651 100%);
-$gradient-secondary:    linear-gradient(-55deg, #C5F178 0%, #FFFC63 100%);
+$gradient-primary:      linear-gradient(29deg, #E55151 0%, rgb(236, 156, 113) 100%);
+$gradient-secondary:    linear-gradient(55deg, #C5F178 0%, #FFFC63 100%);
 
 // Media Queries
 $tablet: "only screen and (min-width : 56rem)";

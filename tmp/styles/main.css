@@ -449,7 +449,7 @@ a {
   color: white; }
 
 .hero {
-  background: linear-gradient(-55deg, #C5F178 0%, #FFFC63 100%);
+  background: linear-gradient(55deg, #C5F178 0%, #FFFC63 100%);
   padding: 1rem; }
   .hero__title {
     margin-bottom: 2rem; }
@@ -472,6 +472,11 @@ a {
     background: lightgray; }
   .btn--big {
     font-size: 2rem; }
+
+.hr {
+  border: none;
+  height: 8px;
+  background: linear-gradient(29deg, #E55151 0%, #ec9c71 100%); }
 
 .section {
   margin: 0 auto 4rem;

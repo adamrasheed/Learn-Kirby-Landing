@@ -1,4 +1,4 @@
-// @import loggit from './modules/test'
+// import testFunc from './modules/test';
 
 const info = {
     github: 'https://github.com/adamrasheed',
@@ -18,7 +18,7 @@ const perfectFor = () => {
         {
             title: 'Developers',
             icon: 'fal fa-code',
-            desc: 'Kirby is a flat-file developer-friendly CMS. It let’s you make it as complex or as simple as you want it to be. Oh, and since it’s flat-file. There’s no database for hackers to get into.'
+            desc: 'Kirby is a flat-file developer-friendly CMS. It let’s you make it as complex or as simple as you want it to be. Oh, and since it’s flat-file. There are no database for hackers to get into.'
         },
         {
             title: 'Clients',
@@ -46,10 +46,6 @@ const perfectFor = () => {
     }
 }
 
-const coursePreview = () => {
-
-}
-
 const footerNotes = () => {
     let footer = document.getElementById('footer');
     footer.innerHTML = `
@@ -62,28 +58,38 @@ const footerNotes = () => {
 }
 
 const preview = () => {
-    let videos = document.getElementById('videos');
+    const videos = document.getElementById('videos');
 
     const vidData = [
         {
             title: 'Kirby vs. Wordpress',
+            videoUrl: true,
+            url: '4t2e_0plkaM',
             desc: 'This video will how you the main differences between kirby CMS and Wordpress, and which one to use for your project.'
         },
         {
             title: 'Kirby Setup & Installation',
+            // videoUrl: 
+            url: '',
             desc: 'In this video, you will learn how to setup a working installation on your local machine.'
         },
         {
-            title: 'Video 3',
-            desc: 'video 3 description'
+            title: 'Cleaning Out Starterkit ',
+            // videoUrl: true,
+            url: '',
+            desc: 'In this video, you will learn how to properly delete the content that comes with Kirby Starterkit and create your own'
         },
         {
-            title: 'Video 4',
-            desc: 'video 4 description'
+            title: `Creating Dynamic Content with Fields`,
+            // videoUrl: true,
+            url: '',
+            desc: `In this video, you will learn how to make your static html code into dynamic php with Kirby's custom fields.`
         },
         {
-            title: 'Video 5',
-            desc: ' Vide 5 desscription'
+            title: 'More Dynamic Content with Pages',
+            // videoUrl: true,
+            url: '',
+            desc: 'In this video, you will learn how to create pages with custom fields'
         }
     ];
 
@@ -93,17 +99,27 @@ const preview = () => {
         videoContainer.innerHTML =
         `
             <span class="video__number">&#35;${index+1}</span>
-            <img
-                src="https://picsum.photos/600/400"
-                alt="${video.title}"
-                class="video__img" />
+            ${video.videoUrl == true ? `<iframe
+            width="560" height="315" src="https://www.youtube.com/embed/${video.url}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>`  :
+            `<img
+            src="https://picsum.photos/600/400"
+            alt="${video.title}"
+            class="video__img" />`}
+
             <h3 class="video__title">${video.title}</h3>
             <p class="video__desc">${video.desc}</p>
         `;
         videos.appendChild(videoContainer);
-        console.log(index+1);
     }
 }
+
+// Youtube Fun
+// buildApiRequest('GET',
+//                 '/youtube/v3/channels',
+//                 {'id': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
+//                 'part': 'snippet,contentDetails,statistics'});
+
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
