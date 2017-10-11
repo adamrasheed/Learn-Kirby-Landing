@@ -3,11 +3,13 @@
 }
 
 // Import
-@import 'reset',
-        'vars',
-        'mixins',
-        'global',
-        'grid',
-        'typography',
-        'animation',
-        'modules';
+@import '01-global/reset',
+        '01-global/vars',
+        '01-global/mixins',
+        '01-global/global',
+        '01-global/grid',
+        '01-global/typography',
+        '03-modules/hero',
+        '03-modules/btn',
+        '03-modules/sections',
+        '03-modules/footer';

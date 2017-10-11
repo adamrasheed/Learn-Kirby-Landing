@@ -1,1 +1,0 @@
-"use strict";var info={github:"",twitter:"",name:"adam"};console.log(info.name);var body=document.body;

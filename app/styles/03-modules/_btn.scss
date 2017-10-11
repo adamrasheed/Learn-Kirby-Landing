@@ -1,0 +1,23 @@
+.btn {
+    color: white;
+    font-size: 1rem;
+    font-family: $font-family-heading;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-image: gray;
+    //box-shadow: $Shadow1;
+    transition: all .3s ease-in-out;
+    letter-spacing: .05em;
+    
+    @include shadow1;
+    
+    &:hover {
+        background: lightgray;
+    }
+    
+    &--big {
+        font-size: 2rem;
+    }
+}
