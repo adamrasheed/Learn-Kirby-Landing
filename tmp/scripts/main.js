@@ -40,7 +40,7 @@ var perfectFor = function perfectFor() {
             var type = _step.value;
 
             var perfectType = document.createElement('div');
-            perfectType.classList.add('type');
+            perfectType.classList.add('col', 'type');
             perfectType.innerHTML = '\n                <i class="type__icon ' + type.icon + '"></i>\n                <h3 class="type__title">' + type.title + '</h3>\n                <p class="type__desc">' + type.desc + '</p>\n            ';
             var _perfectFor = document.querySelector('#perfectFor');
             _perfectFor.appendChild(perfectType);
@@ -63,7 +63,7 @@ var perfectFor = function perfectFor() {
 
 var footerNotes = function footerNotes() {
     var footer = document.getElementById('footer');
-    footer.innerHTML = '\n        <p class="center">\n            Site by <a href="' + info.twitter + '" target="_blank" rel="noopener">' + info.name + '</a>.\n            View <a href="' + info.github + '" target="_blank" rel="noopener">Source Code</a>\n        </p>\n    ';
+    footer.innerHTML = '\n        <p class="center">\n            <span class="footer__span">\n            Site by <a class="highlight" href="' + info.twitter + '" target="_blank" rel="noopener">' + info.name + '</a>.\n            </span>\n            <span class="footer__span">\n            View <a class="highlight" href="' + info.github + '" target="_blank" rel="noopener">Source Code</a>\n            </span>\n        </p>\n    ';
 };
 
 var preview = function preview() {
@@ -110,8 +110,8 @@ var preview = function preview() {
             var video = _ref2[1];
 
             var videoContainer = document.createElement('div');
-            videoContainer.classList.add('video-container');
-            videoContainer.innerHTML = '\n            <span class="video__number">&#35;' + (index + 1) + '</span>\n            ' + (video.videoUrl == true ? '<iframe\n            width="560" height="315" src="https://www.youtube.com/embed/' + video.url + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' : '<img\n            src="https://picsum.photos/600/400"\n            alt="' + video.title + '"\n            class="video__img" />') + '\n\n            <h3 class="video__title">' + video.title + '</h3>\n            <p class="video__desc">' + video.desc + '</p>\n        ';
+            videoContainer.classList.add('video', 'course-preview__video', 'video-container');
+            videoContainer.innerHTML = '\n            <span class="video__number">&#35;' + (index + 1) + '</span>\n            ' + (video.videoUrl == true ? '<iframe\n            width="560" height="315"\n            src="https://www.youtube.com/embed/' + video.url + '?rel=0&amp;showinfo=0"\n            frameborder="0"\n            class="video__video"\n            allowfullscreen></iframe>' : '<img\n            src="https://picsum.photos/600/400"\n            alt="' + video.title + '"\n            class="course-preview__img video__img" />') + '\n\n            <h3 class="video__title">' + video.title + '</h3>\n            <p class="video__desc">' + video.desc + '</p>\n        ';
             videos.appendChild(videoContainer);
         }
     } catch (err) {
@@ -129,13 +129,6 @@ var preview = function preview() {
         }
     }
 };
-
-// Youtube Fun
-// buildApiRequest('GET',
-//                 '/youtube/v3/channels',
-//                 {'id': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
-//                 'part': 'snippet,contentDetails,statistics'});
-
 
 document.addEventListener("DOMContentLoaded", function () {
     perfectFor();

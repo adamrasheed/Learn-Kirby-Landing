@@ -15,7 +15,7 @@ body {
 h1, h2, h3, h4 {
     font-family: $font-family-heading;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.25;
     letter-spacing: .05em;
 }
 
@@ -36,7 +36,15 @@ h4 {font-size: 1.414em;}
 
 a {
     color: $text;
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media #{$lrg}{
+    h2{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
 }
 
 

@@ -1,0 +1,33 @@
+.optin-section{
+    padding: 2rem;
+    background-image: linear-gradient(60deg, #3B4858 0%, #313E4D 100%);
+
+    .form{
+        justify-content: center;
+    }
+
+    @media #{$lrg}{
+        padding: 4rem 2rem;
+        .form{
+            justify-content: flex-start;
+        }
+    }
+}
+
+.optin{
+    &__title{
+        margin-bottom: 0.25rem;
+    }
+
+    &__subtitle{
+        font-size: 1.333rem;
+        margin-bottom: 2.75rem;
+    }
+}
+
+.optin-hr{
+    height: 8px;
+    background: $gradient-primary;
+    border: none;
+    margin: 0;
+}

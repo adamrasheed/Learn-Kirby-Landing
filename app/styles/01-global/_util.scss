@@ -1,0 +1,15 @@
+.highlight{
+    position: relative;
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: .475em;
+        left: -.375em;
+        z-index: -1;
+        width: calc(100% + .625em);
+        height: calc(100% - .425em);
+        background: $gradient-secondary;
+        clip-path: $clip1;
+    }
+}

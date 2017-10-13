@@ -1,34 +1,43 @@
 .section {
-    margin: 0 auto 4rem;
-    padding: 2rem 0 0;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: $container-width-small;
     &--alt {
         padding: 2rem 0;
-        background: $light;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.10);
-    }
-    &__subheading {
-        margin-bottom: 2rem;
     }
     
     @media #{$med} {
-        margin: 0 auto 6rem;
-        padding: 3rem 0 0;
-        &--alt {
-            padding: 3rem 0;
-        }
-        &:last-of-type {
-            margin: 0 auto 2rem;
-        }
     }
     
     @media #{$lrg} {
-        margin: 0 auto 8rem;
-        padding: 4rem 0 0;
-        &--alt {
-            padding: 4rem 0;
+        max-width: $container-width-large;
+    }
+
+    &--grid{
+        @media #{$med} {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-flow: row wrap;
         }
-        &__subheading {
-            margin-bottom: 4rem;
+    }
+}
+
+.col{
+    @media #{$med}{
+        flex: 50%;
+        max-width: 50%;
+        &--1{
+            padding-right: 2rem;
+        }
+        &--full{
+            flex: 100%;
+        }
+    }
+
+    @media #{$lrg}{
+        &--1{
+            padding-right: 6rem;
         }
     }
 }

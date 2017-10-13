@@ -34,7 +34,7 @@ const perfectFor = () => {
 
     for (let type of Types){
         let perfectType = document.createElement('div');
-        perfectType.classList.add('type');
+        perfectType.classList.add('col', 'type');
         perfectType.innerHTML = 
             `
                 <i class="type__icon ${type.icon}"></i>
@@ -50,8 +50,12 @@ const footerNotes = () => {
     let footer = document.getElementById('footer');
     footer.innerHTML = `
         <p class="center">
-            Site by <a href="${info.twitter}" target="_blank" rel="noopener">${info.name}</a>.
-            View <a href="${info.github}" target="_blank" rel="noopener">Source Code</a>
+            <span class="footer__span">
+            Site by <a class="highlight" href="${info.twitter}" target="_blank" rel="noopener">${info.name}</a>.
+            </span>
+            <span class="footer__span">
+            View <a class="highlight" href="${info.github}" target="_blank" rel="noopener">Source Code</a>
+            </span>
         </p>
     `;
 
@@ -95,16 +99,20 @@ const preview = () => {
 
     for (let [index, video] of vidData.entries()){
         const videoContainer = document.createElement('div');
-        videoContainer.classList.add('video-container');
+        videoContainer.classList.add('video','course-preview__video','video-container');
         videoContainer.innerHTML =
         `
             <span class="video__number">&#35;${index+1}</span>
             ${video.videoUrl == true ? `<iframe
-            width="560" height="315" src="https://www.youtube.com/embed/${video.url}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>`  :
+            width="560" height="315"
+            src="https://www.youtube.com/embed/${video.url}?rel=0&amp;showinfo=0"
+            frameborder="0"
+            class="video__video"
+            allowfullscreen></iframe>`  :
             `<img
             src="https://picsum.photos/600/400"
             alt="${video.title}"
-            class="video__img" />`}
+            class="course-preview__img video__img" />`}
 
             <h3 class="video__title">${video.title}</h3>
             <p class="video__desc">${video.desc}</p>
@@ -112,14 +120,6 @@ const preview = () => {
         videos.appendChild(videoContainer);
     }
 }
-
-// Youtube Fun
-// buildApiRequest('GET',
-//                 '/youtube/v3/channels',
-//                 {'id': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
-//                 'part': 'snippet,contentDetails,statistics'});
-
-
 
 
 document.addEventListener("DOMContentLoaded", function() {

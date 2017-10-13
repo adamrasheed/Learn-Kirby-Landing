@@ -1,0 +1,18 @@
+.perfect-for{
+    
+    @media #{$lrg}{
+        margin: 0 auto 8rem;
+    }
+}
+
+.type{
+    padding: 0 1rem;
+    flex: 50%;
+    margin: 1rem 0;
+
+    &__icon{}
+
+    &__title{}
+
+    &__desc{}
+}

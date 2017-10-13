@@ -33,8 +33,7 @@
 <body>
 
   <div class="hero">
-    <img src="" alt="">
-    <img src="" alt="" class="hero__background">
+    <div class="hero__background"></div>
     <div class="hero__container">
       <h1 class="hero__title">Learn Kirby</h1>
       <h3 class="h3 hero__desc">A Free 5-Part Course Designed to Help You Quickly Learn the Kirby CMS</h3>
@@ -42,46 +41,78 @@
     </div>
   </div>
 
-  <div class="option optin--hero">
+  <div class="optin optin--hero">
     <form action="" class="form">
       <div class="form__group">
-          <label class="form__label" for="email">Email</label>
-          <input
+        <input
           type="email"
           name=""
           id=""
           class="form__input"
         >
+        <label class="form__label" for="email">Email</label>
       </div>
       <input type="submit" value="Start Your Course Now" class="form__submit">
+
+      <div class="form__msg-container">
+        <span class="form__msg form__msg--success">Thanks for signing up!</span>
+        <span class="form__msg form__msg--error">Yo, there was an error. <br/>Please check your shiz.</span>
+      </div>
     </form>
   </div>
 
   <hr class="hr hr--left">
-  <section class="love-kirby">
-    <h2 class="section__title center">Why You'll Love Kirby</h2>
-    <h2 class="love-kirby__tagline">Wordpress is Too Bloated for Small Websites.</h2>
-    <div class="love-kirby__items">
-      <h3 class="love-kirby__title">Drag n Drop Your Entire Project</h3>
-      <p class="love-kirby__desc">Don’t mess with Databases, huge php files, and etc. Kirby is a flat-file CMS that lets you keep your entire project in a folder. </p>
+  <section class="section section--grid love-kirby">
+    <h3 class="col--full section__title center love-kirby__headline">Why You'll Love Kirby</h3>
+    <h2 class="col col--1 love-kirby__tagline">Wordpress is Too Bloated for Small Websites.</h2>
+    <div class="col love-kirby__items">
+      <div class="love-kirby__item">
+        <h3 class="love-kirby__title">Drag n Drop Your Entire Project</h3>
+        <p class="love-kirby__desc">Don’t mess with Databases, huge php files, and etc. Kirby is a flat-file CMS that lets you keep your entire project in a folder. </p>
+      </div>
+      <div class="love-kirby__item">
+          <h3 class="love-kirby__title">As Complex As You Want</h3>
+          <p class="love-kirby__desc">Kirby lets you easily create website with a complete back–end complete with custom fields baked right in. Make your CMS as feature-rich as you want. Learn it the easy way with a Free 5-Part Crash Course.</p>
+      </div>
 
-      <h3 class="love-kirby__title">As Complex As You Want</h3>
-      <p class="love-kirby__desc">Kirby lets you easily create website with a complete back–end complete with custom fields baked right in. Make your CMS as feature-rich as you want. Learn it the easy way with a Free 5-Part Crash Course.</p>
     </div>
   </section>
   <hr class="hr hr--right">
 
-  <section id="perfectFor" class="perfect-for"></section>
+  <section id="perfectFor" class="section section--grid perfect-for"></section>
 
-  <section id="course-preview" class="course-preview">
-    <h2 class="course-preview__title">5 Videos Jam-Packed with Actionable Content</h2>
-    <div id="videos" class="course-preview__videos">
+  <section id="course-preview" class="section section--grid course-preview">
+    <h2 class="col col--1 course-preview__title"><span class="highlight">5 Videos</span> Jam-Packed with Actionable Content</h2>
+    <div id="videos" class="col course-preview__videos">
     </div>
   </section>
 
-  <section id="optin" class="optin">optin</section>
+  <hr class="optin-hr">
+  <section id="optin" class="optin-section">
+    <h2 class="white center optin__title">Start The Course Today</h2>
+    <p class="white center optin__subtitle">Get the 5-Part course sent straight to your Inbox</p>
+    <div class="optin">
+        <form action="" class="form">
+            <div class="form__group">
+              <input
+                type="email"
+                name=""
+                id=""
+                class="form__input"
+              >
+              <label class="form__label" for="email">Email</label>
+            </div>
+            <input type="submit" value="Start Your Course Now" class="form__submit">
+      
+            <div class="form__msg-container">
+              <span class="form__msg form__msg--success">Thanks for signing up!</span>
+              <span class="form__msg form__msg--error">Yo, there was an error. <br/>Please check your shiz.</span>
+            </div>
+          </form>
+    </div>
+  </section>
 
-  <footer id="footer">yoppper</footer>
+  <footer id="footer" class="footer"></footer>
 </body>
 <script src="scripts/main.js"></script>
 </body>

@@ -1,0 +1,26 @@
+.love-kirby{
+
+    &__headline{
+        // margin-bottom: 2rem;
+        &:after{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 8rem;
+            background: $gradient-secondary;
+            margin: 2rem auto 3rem;
+        }
+    }
+
+    &__item{
+        margin-bottom: 2rem;
+    }
+    @media #{$med}{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+
+        
+    }
+}

@@ -1,0 +1,81 @@
+.hero{
+    padding: 2rem 0;
+    position: relative;
+
+    &__container{
+        margin: 0 auto;
+        // max-width: $container-width-small;
+    }
+
+    &__title{
+        padding: 0 1rem;
+        margin: 0 0 2rem;
+    }
+
+    &__desc{
+        padding: 0 1rem;
+    }
+
+    &__background{
+        background: 
+            $gradient-secondary,
+            url('../../assets/hero.png');
+        background-blend-mode: multiply;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        width: calc(100% + 1rem);
+        height: 48vh;
+        object-fit: cover;
+        filter: blur(3px);
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        z-index: -1;
+        // opacity: 0.6;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+    }
+
+    @media #{$med}{
+        &__container{
+            margin: 3rem auto 0;
+            max-width: $container-width-small;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title{
+            margin-top: -.75rem;
+        }
+
+        &__desc{
+            margin-top: -.4rem;
+        }
+    }
+
+    @media #{$lrg}{
+        &__container{
+            margin: 4rem auto 0;
+            max-width: $container-width-large;
+        }
+
+        &__title, &__desc{
+            flex: 30%;
+        }
+
+        &__title{
+            margin-top: -.75rem;
+            // padding-right: 4rem;
+
+            font-size: 6rem;
+            line-height: 6.5rem;
+        }
+
+        &__desc{
+            margin-top: 0;
+        }
+
+        &__background{
+            height: 60vh;
+        }
+    }
+}
