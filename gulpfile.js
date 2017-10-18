@@ -12,6 +12,11 @@ var autoprefixer = require('gulp-autoprefixer');
 
 var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
+var fs = require('fs');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var rjs = require('gulp-requirejs');
 
 var browserSync = require('browser-sync');
 
@@ -101,15 +106,17 @@ gulp.task('styles', () => {
 
 // SCRIPTS
 gulp.task('scripts', () => {
-return gulp.src([app.scripts, '!app/scripts/**/*.min.js'])
+return gulp.src([app.scripts])
   .pipe(plumber({
     errorHandler: function (error) {
       console.log(error.message);
       this.emit('end');
   }}))
-  .pipe(babel({
-    presets: ['env']
-  }))
+  .pipe(
+    babel({
+      presets: ['env']
+    }
+  ))
   .pipe(gulp.dest(tmp.scripts))
   .pipe(browserSync.reload({stream:true}))
 });
@@ -126,11 +133,11 @@ gulp.task('build:tmp',
           ['clean', 'html', 'styles', 'scripts', 'assets']);
 
 // Default
-gulp.task('default', [ 'build:tmp', 'browser-sync'], () => {
-  gulp.watch(app.html, ['html']);
-  gulp.watch(app.assets, ['assets']);
-  gulp.watch(app.styles, ['styles']);
-  gulp.watch(app.scripts, ['scripts']);
+gulp.task('default', ['build:tmp', 'browser-sync'], () => {
+  return gulp.watch(app.html, ['html']);
+        gulp.watch(app.assets, ['assets']);
+        gulp.watch(app.styles, ['styles']);
+        gulp.watch(app.scripts, ['scripts']);
 });
 
 gulp.task('deploy',  () => {

@@ -1,3 +1,3 @@
-export function testFunc() {
+const testFunc = () => {
     console.log('moduels are being imported!');
 };

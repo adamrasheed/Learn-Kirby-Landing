@@ -21,8 +21,11 @@
         font-weight: bold;
         position: absolute;
         z-index: 2;
-        top: .825rem;
+        top: .7rem;
         left: 1rem;
+
+        transition: all .15s ease-in-out;
+
     }
 
     &__input, &__submit{
@@ -38,6 +41,13 @@
         width: 100%;
         max-width: 20rem;
         height: 100%;
+    }
+
+    &__input:focus + label{
+        top: -1.7em;
+        left: 0.325rem;
+        font-size: .75rem;
+        letter-spacing: .2em;
     }
 
     &__submit{

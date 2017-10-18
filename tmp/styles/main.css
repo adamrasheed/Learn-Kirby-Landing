@@ -586,8 +586,10 @@ a {
     font-weight: bold;
     position: absolute;
     z-index: 2;
-    top: .825rem;
-    left: 1rem; }
+    top: .7rem;
+    left: 1rem;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out; }
   .form__input, .form__submit {
     border-radius: .5rem; }
   .form__input {
@@ -599,6 +601,11 @@ a {
     width: 100%;
     max-width: 20rem;
     height: 100%; }
+  .form__input:focus + label {
+    top: -1.7em;
+    left: 0.325rem;
+    font-size: .75rem;
+    letter-spacing: .2em; }
   .form__submit {
     background: linear-gradient(29deg, #E55151 0%, #ec9c71 100%);
     font-family: "Cubano", -apple-system, sans-serif;

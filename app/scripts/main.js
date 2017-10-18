@@ -1,5 +1,3 @@
-// import testFunc from './modules/test';
-
 const info = {
     github: 'https://github.com/adamrasheed',
     twitter: 'https://twitter.com/ARasheedPhoto',
@@ -122,8 +120,23 @@ const preview = () => {
 }
 
 
+const floatingLabels = () => {
+    const formGroup = document.body.getElementsByClassName('form__group');
+
+    for (let group of formGroup){
+        let input = group.querySelector('.form__input');
+
+        if (input.value.length != 0) {
+            console.log('fillin up');
+        }
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     perfectFor();
     footerNotes();
     preview();
+    floatingLabels();
 });
+
+console.log('yo yo yo');
