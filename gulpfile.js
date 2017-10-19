@@ -30,14 +30,6 @@ const app = {
   assets: 'app/assets/**/*'
 }
 
-const tmp = {
-  root: 'tmp',
-  html: 'tmp/*.html',
-  styles: 'tmp/styles',
-  scripts: 'tmp/scripts',
-  assets: 'tmp/assets'
-}
-
 const dist = {
   root: 'dist',
   html: 'dist',
@@ -46,6 +38,20 @@ const dist = {
   assets: 'dist/assets/'
 }
 
+const path = [{
+  app: {
+    root: 'app',
+    styles: 'app/styles',
+    scripts: 'app/js',
+    assets: 'app/assets'
+  },
+  dist: {
+    root: 'dist',
+    styles: 'dist/styles',
+    scripts: 'dist/js',
+    assets: 'dist/assets'
+  }
+}];
  // Browser Sync
 gulp.task('browser-sync', () =>  {
   browserSync({

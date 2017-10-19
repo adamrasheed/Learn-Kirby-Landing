@@ -1,0 +1,6 @@
+{
+    "files" : "./dist/**/*.{js, html, css}",
+    "server" : { "baseDir" : "./dist" },
+    // "https" : true,
+    "browser" : ["google-chrome"]
+}
