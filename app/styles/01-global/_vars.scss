@@ -31,18 +31,20 @@ $container-width-small: 32rem;
 $container-width-large: 52rem;
 
 // Media Queries
-$tablet: "only screen and (min-width : 56rem)";
-$phone: "only screen and (min-width : 24rem)";
+$tablet: "only screen and (min-width : 768px)";
+$phone:  "only screen and (min-width : 360px)";
 
-$sml: 'only screen and (min-width : 24rem)';
-$med: 'only screen and (min-width : 36rem)';
-$lrg: 'only screen and (min-width : 64rem)';
-$xlrg: 'only screen and (min-width : 80rem)';
+$sml:  'only screen and (min-width : 360px)';
+$med:  'only screen and (min-width : 576px)';
+$lrg:  'only screen and (min-width : 1024px)';
+$xlrg: 'only screen and (min-width : 1280px)';
 
 
-//Shadows
-$Shadow1: 0px 6px 6px 0px rgba(0,0,0,0.16), 0px 8px 12px 0px rgba(0,0,0,0.16);
-$Shadow1-Hover: 0px 10px 6px 0px rgba(0,0,0,0.16), 0px 12px 12px 0px rgba(0,0,0,0.16);
+// Transitions
+$transition: (
+    short: all .15s ease-in-out,
+    med: all .25s ease-in-out
+);
 
 // Clip Angles
 $clip-angle: 3%;
@@ -50,9 +52,5 @@ $clip-angle-inv: 97%;
 $clip1: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 
 // Shadow
-/* shadow: */
-$shadow1: 0 0 11px -11px rgba(0,0,0,0.10),
-            0 4px 4px -2px rgba(0,0,0,0.32);
-
-$shadow2:  0 10px 10px -7px rgba(0, 0, 0, 0.1),
-            0 11px 14px -12px rgba(0, 0, 0, 0.52);
+$shadow1: 0 4px 11px -11px rgba(206, 24, 24, 0.904),
+          0 4px 4px -16px rgba(29, 218, 54, 0.32);

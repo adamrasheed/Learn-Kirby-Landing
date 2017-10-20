@@ -7,7 +7,7 @@ const perfectFor = () => {
         },
         {
             title: 'Developers',
-            icon: 'fal fa-code',
+            icon: 'fa fal fa-code',
             desc: 'Kirby is a flat-file developer-friendly CMS. It let’s you make it as complex or as simple as you want it to be. Oh, and since it’s flat-file. There are no database for hackers to get into.'
         },
         {

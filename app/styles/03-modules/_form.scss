@@ -58,8 +58,9 @@
         letter-spacing: .05em;
         border: 0;
         padding: .75rem 1.5rem;
-        box-shadow: $shadow2;
         cursor: pointer;
+
+        @include shadow('btn');
     }
 
     &__msg-container{
@@ -76,6 +77,8 @@
         padding: .35em .5em;
         line-height: 1;
         clip-path: polygon(0 0, $clip-angle-inv 0, 100% 100%, $clip-angle 100%);
+
+        display: none;
 
         &--success{
             background: $color-success;

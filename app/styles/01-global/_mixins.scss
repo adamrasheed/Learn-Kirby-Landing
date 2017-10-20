@@ -1,5 +1,15 @@
 //  Shadows
-@mixin shadow1() {
-    box-shadow: 0 0 11px 0 rgba(0,0,0,0.10),
-                0 2px 4px 0 rgba(0,0,0,0.32);
+@mixin shadow($type) {
+
+    box-shadow: 0 .88em 12px -0.8em rgba(0, 0, 0, 0.53),
+                0 1.6em 20px -1.2em rgba(0, 0, 0, 0.163);
+
+    @if($type == 'btn'){
+        transition: map-get($transition, short );
+        &:hover{
+            box-shadow: 0 .96em 12px -0.8em rgba(0, 0, 0, 0.53),
+                        0 1.68em 20px -1.2em rgba(0, 0, 0, 0.163);
+        }
+    } @else{
+    }
 }

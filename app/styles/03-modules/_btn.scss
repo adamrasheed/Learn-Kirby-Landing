@@ -7,11 +7,10 @@
     padding: 1em;
     text-decoration: none;
     background-image: gray;
-    //box-shadow: $Shadow1;
     transition: all .3s ease-in-out;
     letter-spacing: .05em;
     
-    @include shadow1;
+    @include shadow(btn);
     
     &:hover {
         background: lightgray;
