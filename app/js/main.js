@@ -4,14 +4,16 @@ require('./vendors/solid.min.js');
 require('./vendors/brands.min.js');
 
 import fontawesome from '@fortawesome/fontawesome'
-import validate from "validate.js";
+import validate from "validate.js"
 
 
-import {info, body} from './modules/vars';
-import perfectFor from './modules/perfectFor';
-import floatingLabels from './modules/floatingLabels';
-import preview from './modules/preview';
-import footer from './modules/footer';
+import {info, body} from './modules/vars'
+import floatingLabels from './modules/floatingLabels'
+import loveKirby from './modules/loveKirby'
+import perfectFor from './modules/perfectFor'
+import preview from './modules/preview'
+import footer from './modules/footer'
+import parallax from './modules/parallax'
 
 
 const iconDoneRendering = () => {
@@ -19,10 +21,11 @@ const iconDoneRendering = () => {
   }
 
 document.addEventListener("DOMContentLoaded", function() {
-    fontawesome.dom.i2svg(iconDoneRendering);
+    loveKirby();
     perfectFor();
     preview();
     floatingLabels();
     footer();
-    fontawesome.dom.i2svg(iconDoneRendering)
+    parallax();
+    fontawesome.dom.i2svg(iconDoneRendering);
 });

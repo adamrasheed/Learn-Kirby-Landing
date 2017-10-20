@@ -2,8 +2,7 @@
     border: none;
     height: 8px;
     background: $gradient-primary;
-
-    width: 40%;
+    max-width: 30%;
     margin: 4rem auto 4rem 0;
     clip-path: polygon(0 0, $clip-angle-inv 0, 100% 100%, 0 100%);
 
@@ -13,7 +12,6 @@
     }
 
     @media #{$med}{
-        width: 60%;
         height: 12px;
         margin: 6rem auto 6rem 0;
 
@@ -23,7 +21,6 @@
     }
 
     @media #{$lrg}{
-        width: 36%;
         margin: 8rem auto 8rem 0;
 
         &--right{
