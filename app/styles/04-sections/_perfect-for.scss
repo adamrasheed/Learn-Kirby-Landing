@@ -6,13 +6,31 @@
 }
 
 .type{
-    padding: 0 1rem;
-    flex: 50%;
-    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+    margin: 0 0 3rem;
 
-    &__icon{}
+    padding: 0 1rem;
+
+
+    &__icon{
+        font-size: 24px;
+        height: 40px;
+        width: 4rem;
+        margin: .5em 0 0;
+    }
 
     &__title{}
 
-    &__desc{}
+    &__desc{
+        grid-column: 2/3;
+    }
+
+    @media #{$med}{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr auto;
+        flex: 50%;
+    }
 }

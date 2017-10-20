@@ -17,9 +17,7 @@
     }
 
     &__background{
-        background: 
-            $gradient-secondary,
-            url('../../assets/hero.png');
+        background:  $gradient-secondary;
         background-blend-mode: multiply;
         background-size: 110%;
         background-repeat: no-repeat;
@@ -31,8 +29,22 @@
         top: -1rem;
         left: -1rem;
         z-index: -1;
-        // opacity: 0.6;
+        overflow: hidden;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 76%);
+    }
+
+    &__img{
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+        right: -2rem;
+        bottom: -1rem;
+        object-fit: cover;
+        filter: blur(3px);
+        transform: scale(1.2);
+        max-width: 100%;
+        z-index: -2;
+        opacity: 0.25;
     }
 
     @media #{$med}{

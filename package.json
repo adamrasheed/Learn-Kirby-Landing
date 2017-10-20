@@ -28,6 +28,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome": "0.0.19",
     "@fortawesome/fontawesome-free-brands": "0.0.17",
+    "@fortawesome/fontawesome-free-solid": "0.0.16",
     "autoprefixer": "^7.1.5",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",

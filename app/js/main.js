@@ -1,14 +1,9 @@
 require('../styles/main.scss');
 
-require('./modules/test');
-require('./modules/test2');
+require('./vendors/solid.min.js');
+require('./vendors/brands.min.js');
 
-// Vendors
-// require('./vendors/brands.min');
-// require('./vendors/light.min');
-// require('./vendors/retina.min');
-
-import fontawesome from '@fortawesome/fontawesome';
+import fontawesome from '@fortawesome/fontawesome'
 import validate from "validate.js";
 
 
@@ -29,4 +24,5 @@ document.addEventListener("DOMContentLoaded", function() {
     preview();
     floatingLabels();
     footer();
+    fontawesome.dom.i2svg(iconDoneRendering)
 });
