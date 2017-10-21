@@ -11,6 +11,12 @@
         position: relative;
         flex: 100%;
         margin-bottom: 1rem;
+
+        &--white{
+            .form__input:focus + label {
+                color: white
+            }
+        }
     }
 
     &__label{

@@ -14,6 +14,7 @@ import perfectFor from './modules/perfectFor'
 import preview from './modules/preview'
 import footer from './modules/footer'
 import parallax from './modules/parallax'
+import validation from './modules/form'
 
 
 const iconDoneRendering = () => {
@@ -29,3 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
     parallax();
     fontawesome.dom.i2svg(iconDoneRendering);
 });
+
+// To Do
+// 1. Form validation
+// 2. Hook up ConvertKit API
+// 3. Test
