@@ -14,7 +14,7 @@ import perfectFor from './modules/perfectFor'
 import preview from './modules/preview'
 import footer from './modules/footer'
 import parallax from './modules/parallax'
-import validation from './modules/form'
+import form from './modules/form'
 
 
 const iconDoneRendering = () => {
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     floatingLabels();
     footer();
     parallax();
+    form();
     fontawesome.dom.i2svg(iconDoneRendering);
 });
 

@@ -13,9 +13,9 @@ const parallax = (callback) => {
     const logTop = () => {
         let windowTop = window.pageYOffset;
 
-        heroBg.style.transform = `translateY(-${32 +windowTop / 2 }px`;
-        heroContent.style.transform = `translateY(-${windowTop / 9}px)`;
-        heroForm.style.transform = `translateY(-${windowTop / 9}px)`;
+        heroBg.style.transform = `translateY(-${32 +windowTop / 9 }px`;
+        heroContent.style.transform = `translateY(-${windowTop / 3}px)`;
+        heroForm.style.transform = `translateY(-${windowTop / 3}px)`;
 
         // console.log(heroForm.style.transform);
 
