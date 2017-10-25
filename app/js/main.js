@@ -3,7 +3,6 @@ require('../styles/main.scss');
 require('./vendors/solid.min.js');
 require('./vendors/brands.min.js');
 
-import fontawesome from '@fortawesome/fontawesome'
 import validate from "validate.js"
 
 
@@ -17,10 +16,6 @@ import parallax from './modules/parallax'
 import form from './modules/form'
 
 
-const iconDoneRendering = () => {
-    console.log('Icons have rendered');
-  }
-
 document.addEventListener("DOMContentLoaded", function() {
     loveKirby();
     perfectFor();
@@ -29,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
     footer();
     parallax();
     form();
-    fontawesome.dom.i2svg(iconDoneRendering);
 });
 
 // To Do

@@ -1,7 +1,27 @@
 .perfect-for{
+    &:after{
+        content: '';
+        display: block;
+        height: 2px;
+        background: $gradient-secondary;
+        margin: 2rem auto 4rem;
+        width: 4rem;
+
+    }
+    @media #{$med}{
+        &:after{
+            margin: 2rem auto;
+            width: 40%;
     
+        }
+    }
     @media #{$lrg}{
         margin: 0 auto 8rem;
+        &:after{
+            margin: 6.5rem auto 0;
+            width: 60%;
+    
+        }
     }
 }
 
@@ -15,10 +35,10 @@
 
 
     &__icon{
-        font-size: 24px;
-        height: 40px;
-        width: 4rem;
+        max-width: 2rem;
+        height: auto;
         margin: .5em 0 0;
+        display: block;
     }
 
     &__title{}
@@ -32,5 +52,12 @@
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr auto;
         flex: 50%;
+
+        &__icon{
+            max-width: 2rem;
+            height: auto;
+            margin: .2em 2rem 0 auto;
+            opacity: 0.65;
+        }
     }
 }
