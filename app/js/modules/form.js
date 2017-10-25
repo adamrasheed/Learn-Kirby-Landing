@@ -1,4 +1,5 @@
 import { validate } from 'validate.js'
+import keys from './keys'
 
 const form = () => {
 
@@ -23,12 +24,7 @@ const form = () => {
         );
     }
 
-    const ckKeys = {
-        url: 'https://api.convertkit.com/v3',
-        api: 'U5nErI005k7uw3DR5Uvslg',
-        secret: 'yo',
-        courseId: 91345
-    }
+    
     const myRequest = new Request(
         `${ckKeys.url}/sequences?api_key=${ckKeys.api}`,
         {
