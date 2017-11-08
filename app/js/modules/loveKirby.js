@@ -10,7 +10,7 @@ const loveKirby = () => {
         'Reasons':[
             {
                 title: 'Drag n\' Drop Your Entire Project',
-                desc: 'Don’t mess with Databases, huge php files, and etc. Kirby is a flat-file CMS that lets you keep your entire project in a folder.'
+                desc: 'Don’t mess with Databases, huge php files, etc. Kirby is a flat-file CMS that lets you keep your entire project in a folder.'
             },
             {
                 title: 'As Robus as You Want',

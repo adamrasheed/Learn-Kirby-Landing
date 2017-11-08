@@ -49,7 +49,7 @@
         height: 100%;
     }
 
-    &__input:focus + label{
+    &__input:focus + label, &__input.has-value + label{
         top: -1.7em;
         left: 0.325rem;
         font-size: .75rem;

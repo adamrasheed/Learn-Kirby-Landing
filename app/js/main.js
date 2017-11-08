@@ -5,7 +5,6 @@ require('./vendors/brands.min.js');
 
 import validate from "validate.js"
 
-
 import {info, body} from './modules/vars'
 import floatingLabels from './modules/floatingLabels'
 import loveKirby from './modules/loveKirby'

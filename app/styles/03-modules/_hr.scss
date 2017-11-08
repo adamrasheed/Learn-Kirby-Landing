@@ -1,7 +1,7 @@
 .hr{
     border: none;
-    height: 8px;
-    background: $gradient-primary;
+    height: 6px;
+    background: $gradient-secondary;
     max-width: 30%;
     margin: 4rem auto 4rem 0;
     clip-path: polygon(0 0, $clip-angle-inv 0, 100% 100%, 0 100%);
@@ -12,7 +12,7 @@
     }
 
     @media #{$med}{
-        height: 12px;
+        height: 8px;
         margin: 6rem auto 6rem 0;
 
         &--right{
@@ -21,10 +21,10 @@
     }
 
     @media #{$lrg}{
-        margin: 8rem auto 8rem 0;
+        margin: 8rem auto 8.25rem 0;
 
         &--right{
-            margin: 8rem 0 8rem auto;
+            margin: 8rem 0 8.25rem auto;
         }
     }
 }
