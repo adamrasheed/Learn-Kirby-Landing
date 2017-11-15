@@ -889,8 +889,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/android-chrome-192x192.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -900,8 +900,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/android-chrome-512x512.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -911,8 +911,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/apple-touch-icon.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -929,8 +929,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/favicon-16x16.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -940,8 +940,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/favicon-32x32.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -966,8 +966,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/mstile-144x144.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -977,8 +977,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/mstile-150x150.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -988,8 +988,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/mstile-310x150.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -999,8 +999,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/mstile-310x310.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1010,8 +1010,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/favicon\/mstile-70x70.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1032,7 +1032,7 @@
 		"oAP": "\/dist\/assets\/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/dist\/assets\/hero.png": {
@@ -1041,8 +1041,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/hero.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1113,7 +1113,7 @@
 		"oAP": "\/dist\/assets\/masthead-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/dist\/assets\/masthead-bg@2x.jpg": {
@@ -1123,7 +1123,7 @@
 		"oAP": "\/dist\/assets\/masthead-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/dist\/assets\/masthead-bg@3x.jpg": {
@@ -1133,7 +1133,7 @@
 		"oAP": "\/dist\/assets\/masthead-bg@3x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/dist\/assets\/screenshot-panel.png": {
@@ -1142,8 +1142,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/screenshot-panel.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1153,8 +1153,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/video-course-thumbnails.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1164,8 +1164,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/video-course-thumbnails@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1175,8 +1175,8 @@
 		"oA": 0,
 		"oAP": "\/dist\/assets\/video-course-thumbnails@3x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1186,6 +1186,16 @@
 		"oA": 2,
 		"oAP": "\/dist\/index.html",
 		"oF": 0
+		},
+	"\/dist\/main-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/dist\/main-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/dist\/main.css": {
 		"aP": 1,

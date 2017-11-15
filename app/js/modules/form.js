@@ -2,39 +2,8 @@ import { validate } from 'validate.js'
 import keys from './keys'
 
 
-const fetchOptions = {
-    'method': 'POST',
-    'Content-Type': 'application/json; charset=utf-8',
-};
-
-const postRequest = new Request(
-    `${keys.url}/forms/${keys.formId}/subscribe`,
-    fetchOptions
-);
-
-const Ajax = (passedData) => {
-    fetch(postRequest)
-        .then(
-        resp => resp.json()
-        )
-        .then(
-        data => {
-            // let crashCourse = data.courses.filter(
-            //     course => (course.id == keys.courseId)
-            // )
-            // console.log(...crashCourse);
-
-            let form = data.forms.filter(
-                form => (form.id == keys.formId)
-            )
-            console.log(form);
-            let messageSuccess = form.success_message;
-        }
-        )
-        .catch(error => {
-            console.log(error.message);
-
-        });
+const Ajax = () => {
+    
 }
 
 
@@ -50,8 +19,50 @@ const form = () => {
         singleForm.addEventListener('submit', (e) => {
             e.preventDefault();
             let inputEmail = e.target.querySelector('.form__input').value;
-            Ajax(inputEmail);
-            formSuccess.style.display = "inline-block";
+
+
+            const fetchOptions = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/ json; charset=utf-8',
+                    api_key: keys.api
+                },
+                body: JSON.stringify({
+                    // api_key: keys.api,
+                    email: inputEmail
+                })
+            };
+
+            const postRequest = new Request(
+                `${keys.url}/forms/${keys.formId}/subscribe`,
+                fetchOptions
+            );
+
+            fetch(postRequest)
+                .then(
+                resp => {
+                    if (resp.ok){
+                        return resp.json();
+                    } throw new Error('401, Homie 💩');
+                    
+                    }
+                )
+                .then(
+                data => {
+                    if(data.error){
+                        console.log(`${data.error}: ${data.message}`);
+                    }else {
+                        console.log(data);
+                        formSuccess.style.display = "inline-block";
+                    };
+                }
+                )
+                .catch(error => {
+                    console.log(`Error: ${error.message}`);
+
+                });
+
+            console.log(`${inputEmail} was not entered.`);
         });
 
         email.addEventListener('blur', (e)=>{
