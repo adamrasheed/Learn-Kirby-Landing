@@ -23,14 +23,16 @@ const form = () => {
 
             const fetchOptions = {
                 method: 'POST',
-                headers: {
+                mode: 'cors',
+                headers: new Headers({
                     'Content-Type': 'application/ json; charset=utf-8',
                     api_key: keys.api
-                },
+                }),
                 body: JSON.stringify({
-                    // api_key: keys.api,
-                    email: inputEmail
-                })
+                    api_key: keys.api,
+                    email_address: inputEmail
+                },
+            )
             };
 
             const postRequest = new Request(
@@ -44,7 +46,6 @@ const form = () => {
                     if (resp.ok){
                         return resp.json();
                     } throw new Error('401, Homie 💩');
-                    
                     }
                 )
                 .then(
