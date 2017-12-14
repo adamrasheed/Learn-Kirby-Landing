@@ -41,9 +41,14 @@ $xlrg: 'only screen and (min-width : 1280px)';
 
 
 // Transitions
+$transition-duration: (
+    short: .15s,
+    med:   .25s
+);
+
 $transition: (
-    short: all .15s ease-in-out,
-    med: all .25s ease-in-out
+    short: all map-get($transition-duration, short) ease-in-out,
+    med: all map-get($transition-duration, med) ease-in-out
 );
 
 // Clip Angles

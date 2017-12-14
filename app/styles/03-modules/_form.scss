@@ -83,6 +83,7 @@
         padding: .35em .5em;
         line-height: 1;
         clip-path: polygon(0 0, $clip-angle-inv 0, 100% 100%, $clip-angle 100%);
+        animation: fadeIn map-get($transition-duration, short) ease-in-out;
 
         display: none;
 
