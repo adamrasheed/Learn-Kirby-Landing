@@ -1,33 +1,9 @@
 .perfect-for{
-    &:after{
-        content: '';
-        display: block;
-        height: 2px;
-        background: $gradient-secondary;
-        margin: 2rem auto 4rem;
-        width: 4rem;
-
-    }
-    @media #{$med}{
-        &:after{
-            margin: 2rem auto;
-            width: 40%;
-    
-        }
-    }
-    @media #{$lrg}{
-        margin: 0 auto 8rem;
-        &:after{
-            margin: 6.5rem auto 0;
-            width: 60%;
-    
-        }
-    }
 }
 
 .type{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto auto;
     grid-template-rows: 1fr auto;
     margin: 0 0 3rem;
 
@@ -35,10 +11,16 @@
 
 
     &__icon{
+        display: block;
+        font-size: 4rem;
+        width: auto;
         max-width: 2rem;
         height: auto;
         margin: .5em 0 0;
-        display: block;
+    }
+
+    .svg-inline--fa{
+        width: auto;
     }
 
     &__title{}

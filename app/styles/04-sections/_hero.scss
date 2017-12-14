@@ -90,4 +90,8 @@
     &__body{
         font-weight: 500;
     }
+
+    &__link{
+        text-decoration: $color-primary wavy underline;
+    }
 }

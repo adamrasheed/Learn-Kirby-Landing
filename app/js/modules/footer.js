@@ -11,6 +11,7 @@ export default () => {
             View <a class="highlight" href="${vars.info.github}" target="_blank" rel="noopener">Source Code</a>
             </span>
         </p>
+        <p class="footer__notice">Not affiliated with Kirby CMS</p>
     `;
 
 }

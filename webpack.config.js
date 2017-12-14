@@ -7,6 +7,8 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ImageminPlugin = require('imagemin-webpack-plugin').default;
+
 var path = require('path');
 
 module.exports = {
@@ -76,5 +78,6 @@ module.exports = {
         from: 'assets/**/*',
         to: './'
     }]),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
   ],
 };

@@ -8,6 +8,7 @@ const parallax = (callback) => {
     const heroForm = document.querySelector('#hero-form');
 
     const hrs = document.getElementsByClassName('hr');
+    const hrCenter = document.getElementsByClassName('hr--center');
 
 
     const logTop = () => {
@@ -29,9 +30,18 @@ const parallax = (callback) => {
                 // hr.style.maxWidth = '100%';
                 // console.log(hr.style.width);
             }
+
+            for (let hrC of hrCenter){
+                hrC.style.width = `${5 + windowTop/30}%`;
+            }
+
         } else {
             for (let hr of hrs){
                 hr.style.width = '30%';
+            }
+
+            for (let hrC of hrCenter) {
+                hrC.style.width = `20%`;
             }
         }
 

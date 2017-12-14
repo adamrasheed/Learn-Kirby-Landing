@@ -3,17 +3,17 @@ const loveKirby = () => {
 
     let Content = {
         'Header': {
-            title: 'Why You\'ll Love Kirby',
+            title: 'Why You\’ll Love Kirby',
             tagline: 'Wordpress is Too Bloated for Small Websites'
         },
 
         'Reasons':[
             {
-                title: 'Drag n\' Drop Your Entire Project',
+                title: 'Drag n\’ Drop Your Entire Project',
                 desc: 'Don’t mess with Databases, huge php files, etc. Kirby is a flat-file CMS that lets you keep your entire project in a folder.'
             },
             {
-                title: 'As Robus as You Want',
+                title: 'As Robust as You Want',
                 desc: 'Kirby lets you easily create website with a complete back–end complete with custom fields baked right in. Make your CMS as feature-rich as you want. Learn it the easy way with a Free 5-Part Crash Course.'
             }
         ]

@@ -11,6 +11,18 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, $clip-angle 100%);
     }
 
+    &--center{
+        margin: 2rem auto 4rem;
+        max-width: 4rem;
+    }
+
+    &--small{
+        display: block;
+        height: 2px;
+        background: $gradient-secondary;
+        clip-path: none;
+    }
+
     @media #{$med}{
         height: 8px;
         margin: 6rem auto 6rem 0;
@@ -18,6 +30,13 @@
         &--right{
             margin: 6rem 0 6rem auto;
         }
+
+        &--small{
+            height: 2px;
+            margin: 2rem auto 0;
+            max-width: 40%;
+        }
+
     }
 
     @media #{$lrg}{
@@ -25,6 +44,11 @@
 
         &--right{
             margin: 8rem 0 8.25rem auto;
+        }
+
+        &--small{
+            margin: 6.5rem auto 0;
+            width: 60%;
         }
     }
 }
